@@ -17,7 +17,7 @@ diff $tmp-ans $tmp-args-few || ERROE_EXIT "ERROR:引数が少ないエラー出�
 echo "引数が少ないクリア"
 
 ./script.sh 1 2 3 2> $tmp-ans && ERROR_EXIT "ERROE:引数が多いのにエラーとならない"
-diff $tmp-ans $tmp-args-many || ERROE_EXIT "ERROR:引数が多いエラー出力が不正"
+diff $tmp-ans $tmp-aegs-many || ERROE_EXIT "ERROR:引数が多いエラー出力が不正"
 echo "引数が多いクリア"
 
 ./script.sh hoge 1 2> $tmp-ans && ERROR_EXIT "ERROE:引数1が自然数ではないのにエラーとならない"
