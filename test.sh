@@ -24,7 +24,7 @@ echo "引数が多いクリア"
 diff $tmp-ans $tmp-arg1-notnum || ERROE_EXIT "ERROR:引数1が自然数でないエラー出力が不正"
 echo "引数１が自然数でないクリア"
 
-./script.sh 1 -1 2> $tmp-ans && ERROR_EXIT "ERROE:引数2が自然数ではないのにエラーとならない"
+./script.sh 1 -1 > $tmp-ans && ERROR_EXIT "ERROE:引数2が自然数ではないのにエラーとならない"
 diff $tmp-ans $tmp-arg2-notnum || ERROE_EXIT "ERROR:引数2が自然数でないエラー出力が不正"
 echo "引数２が自然数でないクリア"
 
