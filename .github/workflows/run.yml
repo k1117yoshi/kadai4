@@ -1,0 +1,14 @@
+name: test
+on: [push]
+
+jobs:
+  io_test:
+    name: Use Linux Commands
+    runs-on: ubuntu-latest
+    steps:
+      -name: Checout
+      uses: actions/checout@v4
+      -name: Permisson Setting
+      run: chmod +x script.sh test.sh
+      -name: Test run
+      run: ./test.sh
